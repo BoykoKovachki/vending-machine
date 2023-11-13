@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">VendingMachine</string>
+
+    <string name="main_activity_title">Vending Machine</string>
+
+    <string name="main_activity_main_menu_item_add">Add Product</string>
+
+    <string name="dialog_title_warning">Warning</string>
+    <string name="dialog_title_information">Information</string>
+    <string name="dialog_button_close">Close</string>
+    <string name="dialog_button_dollar_sign">$</string>
+
+    <string name="row_items_name">Name</string>
+    <string name="row_items_price">Price:</string>
+    <string name="row_items_product_error_update">Item can\'t be updated</string>
+
+    <string name="product_type_drink">Drink</string>
+    <string name="product_type_snack_bar">Snack Bar</string>
+    <string name="product_type_chips">Chips</string>
+    <string name="product_type_candy">Candy</string>
+    <string name="product_type_sandwich">Sandwich</string>
+    <string name="product_type_soft_drink">Soft Drink</string>
+    <string name="product_type_other">Other</string>
+
+    <string name="main_activity_insert_coins">Deposit \nmoney</string>
+    <string name="main_activity_insert_coins_title">Deposit money</string>
+    <string name="main_activity_insert_coins_info">Please deposit money to continue (E.g. 2.50, 6.20, 12.00 etc.)</string>
+    <string name="main_activity_insert_coins_info_error">Please insert valid value! (E.g. 2.50, 5.20, 10.00 etc.)</string>
+    <string name="main_activity_insert_coins_continue_button">Deposit</string>
+    <string name="main_activity_insert_coins_cancel_button">Cancel</string>
+    <string name="main_activity_insert_take_change">Change</string>
+    <string name="main_activity_status_title">Balance</string>
+    <string name="main_activity_status_successful">You bought %s for %s!</string>
+    <string name="main_activity_status_no_cash">Deposit money first!</string>
+    <string name="main_activity_status_not_enough_cash">You don\'t have enough money</string>
+    <string name="main_activity_status_successful_change">Your change is %s</string>
+    <string name="main_activity_status_successful_insert">You successfully deposit! Your Balance is %s!</string>
+    <string name="main_activity_status_reset">Process reset</string>
+    <string name="main_activity_status_reset_change">Process reset. Your change is %s</string>
+
+    <string name="add_row_item_activity_title">Add New Product</string>
+    <string name="add_row_item_activity_info">Please fill the form to add a new product in the vending machine inventory.</string>
+    <string name="add_row_item_activity_product_type">Product Type:</string>
+    <string name="add_row_item_activity_product_name">Product Name:</string>
+    <string name="add_row_item_activity_product_name_hint">Name</string>
+    <string name="add_row_item_activity_product_price">Product Price:</string>
+    <string name="add_row_item_activity_product_price_hint">$</string>
+    <string name="add_row_item_activity_product_count">Product Count:</string>
+    <string name="add_row_item_activity_product_count_hint">Count</string>
+    <string name="add_row_item_activity_add_button">Add</string>
+
+    <string name="add_row_item_activity_validation_product_name">Product name can\'t be empty. Please enter valid name.</string>
+    <string name="add_row_item_activity_validation_product_price">Product price can\'t be empty. Please enter valid price.</string>
+    <string name="add_row_item_activity_validation_product_price_invalid">Product price invalid.(E.g. 2.50, 6.20, 12.00 etc.)</string>
+    <string name="add_row_item_activity_validation_product_count">Product count can\'t be empty. Please enter valid count.</string>
+    <string name="add_row_item_activity_validation_product_count_over_the_limit">Product count can\'t be more than 15.</string>
+
+    <string name="edit_row_item_activity_title">Edit New Product</string>
+    <string name="edit_row_item_activity_product_type">Product Type:</string>
+    <string name="edit_row_item_activity_product_name">Product Name:</string>
+    <string name="edit_row_item_activity_product_name_hint">Name</string>
+    <string name="edit_row_item_activity_product_price">Product Price:</string>
+    <string name="edit_row_item_activity_product_price_hint">$</string>
+    <string name="edit_row_item_activity_product_count">Product Count:</string>
+    <string name="edit_row_item_activity_product_count_hint">Count</string>
+    <string name="edit_row_item_activity_save_button">Save</string>
+
+    <string name="edit_row_item_activity_validation_product_name">Product name can\'t be empty. Please enter valid name.</string>
+    <string name="edit_row_item_activity_validation_product_price">Product price can\'t be empty. Please enter valid price.</string>
+    <string name="edit_row_item_activity_validation_product_price_invalid">Product price invalid.(E.g. 2.50, 6.20, 12.00 etc.)</string>
+    <string name="edit_row_item_activity_validation_product_count">Product count can\'t be empty. Please enter valid count.</string>
+    <string name="edit_row_item_activity_validation_product_count_over_the_limit">Product count can\'t be more than 15.</string>
+
+</resources>

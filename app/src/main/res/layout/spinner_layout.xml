@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinnerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground3">
+
+    <TextView
+        android:id="@+id/spinnerTextView"
+        style="@style/regular_text_view"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black" />
+
+</LinearLayout>

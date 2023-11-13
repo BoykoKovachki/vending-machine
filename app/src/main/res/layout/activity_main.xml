@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/gray_background"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/statusTextView"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/insertCoinsTitleTextView"
+            android:background="@color/colorBackground1"
+            tools:listitem="@layout/row_item" />
+
+        <TextView
+            android:id="@+id/insertCoinsTitleTextView"
+            style="@style/regular_text_view"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/main_activity_insert_coins"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/insertCoinImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/insertCoinsTitleTextView"
+            android:layout_alignStart="@+id/insertCoinsTitleTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/insert_coins_button" />
+
+        <TextView
+            android:id="@+id/infoTitleTextView"
+            style="@style/regular_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insertCoinImageView"
+            android:layout_alignStart="@+id/insertCoinsTitleTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/main_activity_status_title"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/infoTextView"
+            style="@style/regular_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoTitleTextView"
+            android:layout_alignStart="@+id/insertCoinsTitleTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorBackground3"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/changeTitleTextView"
+            style="@style/regular_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoTextView"
+            android:layout_alignStart="@+id/insertCoinsTitleTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/main_activity_insert_take_change"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/changeImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/changeTitleTextView"
+            android:layout_alignStart="@+id/insertCoinsTitleTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/button_change" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            style="@style/regular_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/recycleView"
+            android:layout_alignEnd="@+id/recycleView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorBackground3"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/resetButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:src="@mipmap/button_reset" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

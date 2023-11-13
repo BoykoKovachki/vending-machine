@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/gray_background"
+    android:padding="15dp"
+    tools:context=".activities.AddRowItemsActivity">
+
+    <TextView
+        android:id="@+id/infoTextView"
+        style="@style/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_row_item_activity_info"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/infoTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/product_other" />
+
+    <TextView
+        android:id="@+id/typeTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_row_item_activity_product_type"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typeTitleTextView" />
+
+    <TextView
+        android:id="@+id/nameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typeSpinner"
+        android:layout_marginTop="30dp"
+        android:text="@string/add_row_item_activity_product_name"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTitleTextView"
+        android:hint="@string/add_row_item_activity_product_name_hint"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/priceTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEditText"
+        android:layout_marginTop="30dp"
+        android:text="@string/add_row_item_activity_product_price"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceTitleTextView"
+        android:gravity="start"
+        android:hint="@string/add_row_item_activity_product_price_hint"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/itemCountTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceEditText"
+        android:layout_marginTop="30dp"
+        android:text="@string/add_row_item_activity_product_count"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/itemCountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemCountTitleTextView"
+        android:hint="@string/add_row_item_activity_product_count_hint"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/addButton"
+        style="@style/custom_button"
+        android:layout_below="@+id/itemCountEditText"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button_red"
+        android:text="@string/add_row_item_activity_add_button"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
